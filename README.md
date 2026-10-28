@@ -116,3 +116,16 @@ Emulator ab, die Wecker eingeschlossen.
 | `liste.c`, `karte.c`, `feldwahl.c` | Bausteine der Oberfläche |
 | `hauptmenue.c`, `auswahl.c`, `formular.c`, `name.c`, `plan.c`, `einstellungen_fenster.c` | die Fenster |
 | `speicher.h` | die Fächer im Speicher der Uhr |
+
+## Lizenz
+
+Gemeinfrei, [CC0 1.0](LICENSE), wie Drinktervall. Kopieren, ändern, verkaufen,
+einbauen — ohne Bedingung, ohne Namensnennung, ohne Rückfrage.
+
+CC0 statt der Unlicense, weil das Schweizer Urheberrecht einen Verzicht gar
+nicht kennt; CC0 trägt für genau diesen Fall eine Ersatzlizenz in sich, die
+dasselbe erlaubt.
+
+Alles im Repository ist eigene Arbeit. Die Symbole zeichnet
+`tools/make_icons.py`; `tools/emu.py` stammt aus Drinktervall, das unter
+derselben Widmung steht.
