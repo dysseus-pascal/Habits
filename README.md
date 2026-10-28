@@ -9,6 +9,11 @@ Full Design Specification“). Für die Pebble Time 2 (emery), die Pebble 2 Duo
 (flint) und die Pebble Round 2 (gabbro). Die Oberfläche ist englisch wie die
 Anfrage.
 
+**Installieren:** `habits.pbw` neben dieser README oder aus dem
+[neuesten Release](https://github.com/dysseus-pascal/Habits/releases/latest)
+auf dem Telefon mit der Pebble-App öffnen (bei Boulder: Datei teilen oder
+öffnen mit Boulder).
+
 ## Bedienung
 
 Hauptmenü: **My habits** (See charts, Add habit, Edit habit, Delete habit),
@@ -100,6 +105,13 @@ Diagramme mit dem C-Compiler des Rechners; `pebble.h` kommt als Attrappe aus
 `tools/host`. `tools/screenshots.sh` baut eine Kopie mit Beispieldaten
 (`src/c/demo.c`, Schalter in `src/c/pruef.h`) und fährt die Oberfläche im
 Emulator ab, die Wecker eingeschlossen.
+
+Die CI (`.github/workflows/bauen.yml`, wie in Drinktervall) führt bei jeder
+Änderung auf `main` die Host-Tests aus, baut und legt das Paket als
+`habits.pbw` neben diese README; ein roter Test hält den Lauf vorher an. Steht
+in `package.json` eine Fassung, zu der es noch kein Release gibt, legt sie das
+Release `v<fassung>` mit `habits-<fassung>.pbw` an. Den Text nimmt sie aus
+`.github/release/<fassung>.md` (erste Zeile Titel, dann der Text).
 
 ## Aufbau
 
