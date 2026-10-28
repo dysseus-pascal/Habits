@@ -1,0 +1,50 @@
+{
+  "name": "habits",
+  "author": "dysseus-pascal",
+  "version": "0.1.0",
+  "keywords": [
+    "pebble-app"
+  ],
+  "private": true,
+  "dependencies": {},
+  "pebble": {
+    "displayName": "Habits",
+    "uuid": "cf1cf3d6-e92c-4431-854d-d489c4fbbf48",
+    "sdkVersion": "3",
+    "enableMultiJS": true,
+    "targetPlatforms": [
+      "emery",
+      "flint",
+      "gabbro"
+    ],
+    "watchapp": {
+      "watchface": false
+    },
+    "messageKeys": [],
+    "resources": {
+      "media": [
+        {
+          "menuIcon": true,
+          "type": "bitmap",
+          "name": "IMAGE_ICON",
+          "file": "images/menu_icon.png"
+        },
+        {
+          "type": "bitmap",
+          "name": "ICON_CHECK",
+          "file": "images/icon_check.png"
+        },
+        {
+          "type": "bitmap",
+          "name": "ICON_CROSS",
+          "file": "images/icon_cross.png"
+        },
+        {
+          "type": "bitmap",
+          "name": "ICON_UNDO",
+          "file": "images/icon_undo.png"
+        }
+      ]
+    }
+  }
+}
